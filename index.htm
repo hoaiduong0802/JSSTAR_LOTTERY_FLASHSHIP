@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JS START - LOTTERY</title>
+  </head>
+
+  <body>
+    <section class="main_wrapper">
+      <div class="container">
+        <div class="heading">
+          <h1>Lotto Board</h1>
+
+          <label for="betAmount">Số tiền đặt cược:</label>
+          <input type="number" id="betAmount" min="1" step="1" value="1" />
+          <button id="placeBetBtn" onclick="placeBet()">Đặt cược</button>
+          <div id="userBalance">Số dư: 100 đồng</div>
+
+          <label for="numberOfTickets">Số tờ muốn chơi:</label>
+          <input
+            type="number"
+            id="numberOfTickets"
+            min="1"
+            step="1"
+            value="1"
+          />
+          <button
+            id="chooseNumberOfTicketsBtn"
+            onclick="chooseNumberOfTickets()"
+          >
+            Chọn số tờ
+          </button>
+        </div>
+
+        <div id="lotto-board" class="lotto-board">
+        </div>
+        <div class="button_bottom">
+          <button id="newBoardBtn" onclick="createNewBoard()">Tạo mới</button>
+          <button id="randomNumberBtn" onclick="generateRandomNumber()">
+            Tạo số ngẫu nhiên
+          </button>
+          <button id="startGameBtn" onclick="startGame()">Bắt đầu chơi</button>
+          <button id="restartGameBtn" onclick="restartGame()">Chơi lại</button>
+        </div>
+        <div id="randomNumberOutput"></div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

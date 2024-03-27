@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 512px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.lotto-board {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.lotto-board>div{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.79);
+
+}
+
+.row {
+  display: flex;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+}
+.heading input{
+    padding: 8px 0px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+}
+.column {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+#newBoardBtn,
+#randomNumberBtn,
+#startGameBtn,
+#restartGameBtn,
+#placeBetBtn {
+  margin-top: 10px;
+}
+
+#randomNumberOutput {
+  margin-top: 10px;
+}
+
+/* Styling Main Layout */
+.main_wrapper{
+    padding-top: 20px;
+}
+.main_wrapper .container{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.main_wrapper h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.main_wrapper .button_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+button{
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.79);
+    transition: 0.3s;
+}
+button:hover{
+    background-color: antiquewhite;
+    transition: 0.3s;
+}
